@@ -1,0 +1,312 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As a user, I can login the application",
+    "line": 2,
+    "id": "as-a-user,-i-can-login-the-application",
+    "tags": [
+      {
+        "name": "@REQ_CALC-632",
+        "line": 1
+      }
+    ],
+    "uri": "feat_1.feature",
+    "elements": [
+      {
+        "id": "as-a-user,-i-can-login-the-application;valid-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Valid Login",
+        "tags": [
+          {
+            "name": "@REQ_CALC-632",
+            "line": 1
+          },
+          {
+            "name": "@TEST_CALC-634",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "browser is opened to login page",
+            "result": {
+              "status": "passed",
+              "duration": 365000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user \"demo\" logs in with password \"mode\"",
+            "result": {
+              "status": "passed",
+              "duration": 615000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "welcome page should be open",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-user,-i-can-login-the-application;invalid-login",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Invalid Login",
+        "tags": [
+          {
+            "name": "@REQ_CALC-632",
+            "line": 1
+          },
+          {
+            "name": "@TEST_CALC-635",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "browser is opened to login page",
+            "result": {
+              "status": "passed",
+              "duration": 147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user \"dummy\" logs in with password \"password\"",
+            "result": {
+              "status": "passed",
+              "duration": 607000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "error page should be open",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-user,-i-can-login-the-application;login-with-invalid-credentials-should-fail",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Login With Invalid Credentials Should Fail",
+        "tags": [
+          {
+            "name": "@REQ_CALC-632",
+            "line": 1
+          },
+          {
+            "name": "@TEST_CALC-636",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "browser is opened to login page",
+            "result": {
+              "status": "passed",
+              "duration": 152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "user \"invalid\" logs in with password \"mode\"",
+            "result": {
+              "status": "passed",
+              "duration": 549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "error page should be open",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-user,-i-can-login-the-application;login-with-invalid-credentials-should-fail",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Login With Invalid Credentials Should Fail",
+        "tags": [
+          {
+            "name": "@REQ_CALC-632",
+            "line": 1
+          },
+          {
+            "name": "@TEST_CALC-636",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "browser is opened to login page",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "user \"demo\" logs in with password \"invalid\"",
+            "result": {
+              "status": "passed",
+              "duration": 536000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "error page should be open",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-user,-i-can-login-the-application;login-with-invalid-credentials-should-fail",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Login With Invalid Credentials Should Fail",
+        "tags": [
+          {
+            "name": "@REQ_CALC-632",
+            "line": 1
+          },
+          {
+            "name": "@TEST_CALC-636",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "browser is opened to login page",
+            "result": {
+              "status": "passed",
+              "duration": 103000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "user \"invalid\" logs in with password \"invalid\"",
+            "result": {
+              "status": "passed",
+              "duration": 529000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "error page should be open",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-user,-i-can-login-the-application;login-with-invalid-credentials-should-fail",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Login With Invalid Credentials Should Fail",
+        "tags": [
+          {
+            "name": "@REQ_CALC-632",
+            "line": 1
+          },
+          {
+            "name": "@TEST_CALC-636",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "browser is opened to login page",
+            "result": {
+              "status": "passed",
+              "duration": 101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "user \"demo\" logs in with password \"mode\"",
+            "result": {
+              "status": "passed",
+              "duration": 448000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "error page should be open",
+            "result": {
+              "status": "failed",
+              "duration": 4018000000,
+              "error_message": "AssertionError: Timed out retrying: expected '<h1>' to have text 'Error Page', but the text was 'Welcome Page'\n    + expected - actual\n\n    -Welcome Page\n    +Error Page\n\n    at Object.toBeUnsuccessful (https://robotwebdemo.herokuapp.com/__cypress/tests?p=cypress\\integration\\features\\feat_1.feature:270:33)\n    at Context.eval (https://robotwebdemo.herokuapp.com/__cypress/tests?p=cypress\\integration\\features\\feat_1.feature:125:41)\n    at Context.resolveAndRunStepDefinition (https://robotwebdemo.herokuapp.com/__cypress/tests?p=cypress\\integration\\features\\feat_1.feature:10745:29)\n    at Context.eval (https://robotwebdemo.herokuapp.com/__cypress/tests?p=cypress\\integration\\features\\feat_1.feature:10090:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+{
+   "baseUrl": "https://robotwebdemo.herokuapp.com/",
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": [
+    "*.js",
+    "*.md"
+  ],
+    "projectId": "Project 101",
+    "reporter": "cypress-testrail-reporter",
+    "reporterOptions": {
+        "domain": "https://czr.testrail.io/",
+        "host":"czr.testrail.io",
+        "username": "intel.tony@gmail.com",
+        "password": "jsNV2SGozhNNl3cFRdhT",
+        "projectId": 1,
+        "runId": 33
+    },
+  
+  "chromeWebSecurity": false
+}

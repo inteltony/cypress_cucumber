@@ -1,0 +1,85 @@
+// To get the test case title (it block description)
+function testCaseTitle(inHook){
+  if(inHook) // If called inside a hook
+    return Cypress.mocha.getRunner().suite.ctx.currentTest.title;
+  return Cypress.mocha.getRunner().suite.ctx.test.title;
+}
+
+
+
+// To get the test suite title (describe block description)
+function testSuiteTitle(inHook){
+  if(inHook) // If called inside a hook
+    return Cypress.mocha.getRunner().suite.ctx._runnable.parent.title;
+  return Cypress.mocha.getRunner().suite.ctx.test.parent.title;
+}
+
+
+
+// To get the current test retry 
+function testCaseRetry(inHook){
+  if(inHook) // If called inside a hook
+    return Cypress.mocha.getRunner().suite.ctx.currentTest._currentRetry;
+  return Cypress.mocha.getRunner().suite.ctx.test._currentRetry;
+}
+// To get the total number of retries
+function totalRetries(inHook){
+  if(inHook) // If called inside a hook
+    return Cypress.mocha.getRunner().suite.ctx.currentTest._retries;
+  return Cypress.mocha.getRunner().suite.ctx.test._retries;
+}
+
+
+
+// To get the test case state in after each hook
+function testCaseState(){
+  return Cypress.mocha.getRunner().suite.ctx.currentTest.state;
+}
+// Or Alternatively, to test whether the test case has passed in after each hook
+function hasPassed(){
+  return Cypress.mocha.getRunner().suite.ctx.currentTest.state == 'passed';
+}
+
+
+
+// To get the test case duration in seconds in after each hook
+function testCaseDuration(){
+  return (Cypress.mocha.getRunner().suite.ctx.currentTest.duration/1000).toFixed(2)+' sec';
+}
+
+
+
+// To get the error message of a failing test case 
+function testCaseErrorMessage(){
+  return Cypress.mocha.getRunner().suite.ctx.currentTest.err.message;
+}
+
+
+
+if (Cypress.mocha.getRunner().test.state === 'failed') {
+            cy.log('After each failure');
+        }
+
+
+beforeEach(() =>{
+	cy.log(Cypress.mocha.getRunner().test.title)
+})
+
+
+//"reporter": "junit",
+  //"reporterOptions": {
+  //  "mochaFile": "test-results/test-output-[hash].xml"
+  //},
+
+
+  cy.request({
+          method: 'POST', 
+          url: 'https://jsonplaceholder.cypress.io/posts',
+          headers: {
+              'Content-Type': 'application/json; charset=utf-8',
+          },
+          body: null
+      }).then((response) => {
+          resp_body = response.status
+          cy.log(resp_body)
+      });

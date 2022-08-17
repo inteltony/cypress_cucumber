@@ -1,0 +1,178 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "hrm.feature",
+    "elements": [
+      {
+        "id": "login;login-to-orange-crm-website",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login to Orange CRM Website",
+        "tags": [
+          {
+            "name": "@TestFeature",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "C2393 User is at the login page",
+            "result": {
+              "status": "passed",
+              "duration": 531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enters username as 'Admin' and password as 'admin123'",
+            "result": {
+              "status": "passed",
+              "duration": 531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on login button",
+            "result": {
+              "status": "passed",
+              "duration": 1798000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User is able to successfully login to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-to-orange-crm-website",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Login to Orange CRM Website",
+        "tags": [
+          {
+            "name": "@TestFeature",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "C2393 User is at the login page",
+            "result": {
+              "status": "passed",
+              "duration": 683000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enters username as 'Test' and password as 'abcd123'",
+            "result": {
+              "status": "passed",
+              "duration": 471000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on login button",
+            "result": {
+              "status": "passed",
+              "duration": 786000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User is able to successfully login to the Website",
+            "result": {
+              "status": "failed",
+              "duration": 4058000000,
+              "error_message": "AssertionError: Timed out retrying: Expected to find element: `#menu_dashboard_index`, but never found it.\n    + expected - actual\n\n\n    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\features\\hrm.feature:116:35)\n    at Context.resolveAndRunStepDefinition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\features\\hrm.feature:10764:29)\n    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\\integration\\features\\hrm.feature:10109:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "login;login-to-orange-crm-website",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login to Orange CRM Website",
+        "tags": [
+          {
+            "name": "@TestFeature",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "C2393 User is at the login page",
+            "result": {
+              "status": "passed",
+              "duration": 443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enters username as 'Admin' and password as 'admin123'",
+            "result": {
+              "status": "passed",
+              "duration": 461000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User clicks on login button",
+            "result": {
+              "status": "passed",
+              "duration": 1550000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User is able to successfully login to the Website",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

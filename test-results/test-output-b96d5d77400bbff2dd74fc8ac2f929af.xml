@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.434" tests="3" failures="2">
+  <testsuite name="Root Suite" timestamp="2022-08-17T03:16:00" tests="0" file="cypress\integration\features\hrm.feature" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Login" timestamp="2022-08-17T03:16:00" tests="3" failures="2" time="5.434">
+    <testcase name="Login Login to Orange CRM Website (example #1)" time="5.434" classname="Login to Orange CRM Website (example #1)">
+    </testcase>
+    <testcase name="Login Login to Orange CRM Website (example #2)" time="0" classname="Login to Orange CRM Website (example #2)">
+      <failure message="Timed out retrying: Expected to find element: `#welcome`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying: Expected to find element: `#welcome`, but never found it.
+    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\integration\features\hrm.feature:89:22)
+    at Context.resolveAndRunStepDefinition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\integration\features\hrm.feature:10742:9)
+    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\integration\features\hrm.feature:10084:35)]]></failure>
+    </testcase>
+    <testcase name="Login Login to Orange CRM Website (example #3)" time="0" classname="Login to Orange CRM Website (example #3)">
+      <failure message="Timed out retrying: Expected to find element: `#welcome`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying: Expected to find element: `#welcome`, but never found it.
+    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\integration\features\hrm.feature:89:22)
+    at Context.resolveAndRunStepDefinition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\integration\features\hrm.feature:10742:9)
+    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\integration\features\hrm.feature:10084:35)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
