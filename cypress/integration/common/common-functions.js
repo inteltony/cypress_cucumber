@@ -20,7 +20,7 @@ class CommonFunctions {
       cy.request("GET", "https://jsonplaceholder.cypress.io/comments", {
       }).then((r) => {
           cy.task('setMyUniqueId', r.status)
-          cy.task('setVal',baseUrl)
+          cy.task('setVal',r)
       });
   }
 

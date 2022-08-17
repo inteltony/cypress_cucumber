@@ -7,7 +7,7 @@ before(()=>{
             cy.log(myUniqueId)
     })
     cy.task('getVal').then((myval) => {
-            cy.log(myval)
+            cy.log(myval.status)
     })
 })
 
