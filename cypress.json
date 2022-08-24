@@ -8,10 +8,10 @@
     "projectId": "Project 101",
     "reporter": "cypress-testrail-reporter",
     "reporterOptions": {
-        "domain": "https://czr.testrail.io/",
-        "host":"czr.testrail.io",
-        "username": "intel.tony@gmail.com",
-        "password": "jsNV2SGozhNNl3cFRdhT",
+        "domain": "https://abc.testrail.io/",
+        "host":"abc.testrail.io",
+        "username": "test@gmail.com",
+        "password": "",
         "projectId": 1,
         "runId": 33
     },
